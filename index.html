@@ -6,24 +6,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>The Witty Wikipedia Viewer</h1>
-    </header><!--end header-->
-
-    <section id="search">
-        <p id="search-bar">search bar</p>
-        <p id="search-button">search button</p>
-    </section><!--end #search-->
-
-    <section id="random">
-        <p id="random-article">random article</p>
-    </section><!--end #random-->
-
-    <footer>
-        <p>Created by: Timothy Hoang (<a href="https://www.youtube.com/c/traveldev" target=_blank>travelDev</a>)</p>
-        <p>Technologies deployed: JavaScript, jQuery</p>
-    </footer><!--end footer-->
-
+    <div id="main">
+        <header>
+            <h1>The Witty Wikipedia Viewer</h1>
+            <p>Created by: Timothy Hoang (<a href="https://www.youtube.com/c/traveldev" target=_blank>travelDev</a>)</p>
+            <p>Technologies deployed: JavaScript, jQuery</p>
+        </header><!--end header-->
+    
+        <section id="search">
+            <div id="search-bar">
+                <form id="search-input">
+                    <input id="query" type="text" name="query" placeholder="Search..." required /> 
+                </form>
+                <button id="search-button">Search!</button>
+            </div>
+            
+            <div id="search-random">
+                <button id="random-article">Random Article</button>
+            </div>
+        </section><!--end #search-->    
+    </div>
+    
+    <section id="results">
+        <p>Render search results here.</p>
+    </section>
+    
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body><!--end body-->
 </html><!--end html-->

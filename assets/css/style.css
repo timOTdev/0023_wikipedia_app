@@ -1,0 +1,29 @@
+/* Main */
+#main {
+    font-size: 2em;
+    text-align: center;
+
+    display: flex;
+    flex-flow: wrap;
+}
+#main > * {
+    flex: 1 1 100%;
+}
+
+/* Search */
+input, button {
+    font-size: 1em;
+    max-width: 25vw;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Results */
+#results {
+    text-align: center;
+    font-size: 2em;
+}
