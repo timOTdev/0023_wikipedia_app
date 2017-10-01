@@ -11,15 +11,12 @@
 }
 
 /* Search */
-input, button {
+input {
+    max-width: 60vw;
     font-size: 1em;
-    max-width: 25vw;
 }
-
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
+button {
+    font-size: 1em;
 }
 
 /* Results */
