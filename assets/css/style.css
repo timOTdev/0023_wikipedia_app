@@ -24,3 +24,17 @@ button {
     text-align: center;
     font-size: 2em;
 }
+
+#articles {
+    border: 1px solid black;
+    max-width: 90vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0.5vw;
+}
+
+a {
+    text-decoration: none;
+}
