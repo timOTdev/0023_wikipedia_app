@@ -7,28 +7,28 @@
 </head>
 <body>
     <div id="main">
-        <header>
+        <section id="header">
             <h1>The Witty Wikipedia Viewer</h1>
             <p>Created by: Timothy Hoang (<a href="https://www.youtube.com/c/traveldev" target=_blank>travelDev</a>)</p>
-        </header><!--end header-->
+        </section><!--end #header-->
     
         <section id="search">
             <div id="search-bar">
                 <form id="search-form">
-                    <input id="search-keyword" type="text" name="query" placeholder="Search..." required /> 
+                    <input id="search-articles" type="text" name="query" placeholder="Search..." required> 
+                    <input type="submit">
                 </form>
             </div>
-            
+
             <div id="buttons">
-                <button id="search-button">Search!</button>
-                <button id="random-article">Random Article</button>
+                <button id="random-articles">Random Articles</button>
             </div>
         </section><!--end #search-->    
-    </div>
+    </div><!--end #main-->
     
     <section id="results">
         <div id="results-container"></div>
-    </section>
+    </section><!--end #results-->
     
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body><!--end body-->

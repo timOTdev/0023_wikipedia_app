@@ -20,12 +20,13 @@ button {
 }
 
 /* Results */
-#results {
-    text-align: center;
-    font-size: 2em;
+#results > * {
+    text-align: left;
+    font-size: 1.25em;
+    max-height: 100vh;
 }
 
-#articles {
+#searchArticles {
     border: 1px solid black;
     max-width: 90vw;
     display: block;
@@ -37,4 +38,14 @@ button {
 
 a {
     text-decoration: none;
+}
+
+#randomArticles {
+    border: 1px solid black;
+    max-width: 90vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0.5vw;
 }
