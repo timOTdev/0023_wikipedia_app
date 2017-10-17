@@ -6,7 +6,7 @@
     let searchText;
     searchKeyword.focus();
     
-    // Search article event
+    // Search articles event
     searchForm.addEventListener('submit', function (e) {
         e.preventDefault();
         resultsContainer.innerHTML = '';
@@ -18,7 +18,7 @@
             resultsContainer.insertAdjacentHTML('beforeend', `<p class="network-warning">Oh no! There was an error making a request for the ${part}.</p>`);
         }
         
-        // Render search results
+        // Render search articles
         function addArticles(data) {
             const title = data[1];
             const desc = data[2];
@@ -39,7 +39,7 @@
         // Fetch search articles
         fetch(`https://en.wikipedia.org/w/api.php?format=json&origin=*&action=opensearch&search=${searchText}`, {
             headers: new Headers( {
-                'Api-User-Agent': 'WikiViewer/1.0 (https://timh1203.github.io/wikipedia-viewer/; )'
+                'Api-User-Agent': 'WikiViewer/1.0 (https://timh1203.github.io/wikipedia-viewer/;)'
             })
         })
         .then(response => response.json())
@@ -89,7 +89,7 @@
 
         // Fetch random articles
         fetch(`https://en.wikipedia.org/w/api.php?format=json&action=query&generator=random&grnnamespace=0&grnlimit=5&prop=extracts&exintro=&titles=&origin=*`, {
-            headers: new Headers( {
+            headers: new Headers({
                 'Api-User-Agent': 'WikiViewer/1.0 (https://timh1203.github.io/wikipedia-viewer/; )'
             })
         })

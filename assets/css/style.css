@@ -23,13 +23,7 @@ img {
 }
 
 /* search */
-input {
-    max-width: 90vw;
-    margin-top: 3vh;
-    font-size: 1em;
-    font-family: 'Dosis', sans-serif;
-}
-button {
+input, button  {
     margin-top: 3vh;
     font-size: 1em;
     font-family: 'Dosis', sans-serif;
