@@ -18,7 +18,7 @@
             resultsContainer.insertAdjacentHTML('beforeend', `<p class="network-warning">Oh no! There was an error making a request for the ${part}.</p>`);
         }
         
-        // Post search results
+        // Render search results
         function addArticles(data) {
             const title = data[1];
             const desc = data[2];
@@ -36,7 +36,7 @@
             resultsContainer.insertAdjacentHTML('beforeend', content);
         }
 
-        //Form API query URL
+        // Fetch search articles
         fetch(`https://en.wikipedia.org/w/api.php?format=json&origin=*&action=opensearch&search=${searchText}`, {
             headers: new Headers( {
                 'Api-User-Agent': 'WikiViewer/1.0 (https://timh1203.github.io/wikipedia-viewer/; )'

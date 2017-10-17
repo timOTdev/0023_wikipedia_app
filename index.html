@@ -2,14 +2,17 @@
 <html>
 <head>
     <title>The Witty Wikipedia Viewer by Timothy Hoang (travelDev)</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Dosis" rel="stylesheet">
     <!-- Local Files -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div id="main">
+
         <section id="header">
-            <h1>The Witty Wikipedia Viewer</h1>
-            <p>Created by: Timothy Hoang (<a href="https://www.youtube.com/c/traveldev" target=_blank>travelDev</a>)</p>
+            <h1>The Witty Wikipedia Viewer</h1>            
+            <img src="assets/img/wikipedia-logo-500x456.png" alt="Logo File"/>
         </section><!--end #header-->
     
         <section id="search">
@@ -24,12 +27,17 @@
                 <button id="random-articles">Random Articles</button>
             </div>
         </section><!--end #search-->    
+    
+        <section id="results">
+            <div id="results-container"></div>
+        </section><!--end #results-->
+        
+        <section id="footer">
+            <p>Created by: <a href="http://timothyhoang.net/">Timothy Hoang</a> (<a href="https://www.youtube.com/c/traveldev" target=_blank>travelDev</a>)</p>
+        </section><!--end #footer-->
+
     </div><!--end #main-->
-    
-    <section id="results">
-        <div id="results-container"></div>
-    </section><!--end #results-->
-    
+
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body><!--end body-->
 </html><!--end html-->

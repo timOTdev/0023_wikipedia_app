@@ -1,51 +1,63 @@
 /* Main */
 #main {
-    font-size: 2em;
+    font-size: large;
     text-align: center;
-
-    display: flex;
-    flex-flow: wrap;
+    font-family: 'Dosis', sans-serif;
 }
 #main > * {
     flex: 1 1 100%;
 }
 
-/* Search */
+/* header */
+#header {
+    font-size: x-large; 
+}
+
+.incr {
+    font-size: 1.25em;
+}
+
+img {
+    max-width: 300px;
+    margin: 1vh;
+}
+
+/* search */
 input {
-    max-width: 60vw;
+    max-width: 90vw;
+    margin-top: 3vh;
     font-size: 1em;
+    font-family: 'Dosis', sans-serif;
 }
 button {
+    margin-top: 3vh;
     font-size: 1em;
+    font-family: 'Dosis', sans-serif;
 }
 
-/* Results */
+/* results */
+#results h1 {
+    font-family: 'Francois One', sans-serif;
+}
+
 #results > * {
     text-align: left;
-    font-size: 1.25em;
-    max-height: 100vh;
 }
 
-#searchArticles {
+#searchArticles, #randomArticles {
     border: 1px solid black;
     max-width: 90vw;
     display: block;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    padding: 0.5vw;
+    margin: 5vh auto;
+    padding: 0 1.5vw 0 1.5vw;
 }
 
 a {
     text-decoration: none;
 }
 
-#randomArticles {
-    border: 1px solid black;
-    max-width: 90vw;
-    display: block;
-    margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    padding: 0.5vw;
+/* footer */
+#footer {
+    text-align: center;
+    font-size: medium;
 }
