@@ -1,8 +1,12 @@
+body {
+    background: black;
+}
 /* Main */
 #main {
     font-size: large;
     text-align: center;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Playfair Display', serif;
+    color: white;
 }
 #main > * {
     flex: 1 1 100%;
@@ -10,7 +14,9 @@
 
 /* header */
 #header {
+    font-family: 'Cinzel', serif;
     font-size: x-large; 
+    color: white;
 }
 
 .incr {
@@ -26,7 +32,7 @@ img {
 input, button  {
     margin-top: 3vh;
     font-size: 1em;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 input:hover, button:hover {
@@ -35,27 +41,34 @@ input:hover, button:hover {
 }
 
 /* results */
+#results {
+    color: white;
+}
 #results h1 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 #results > * {
     text-align: left;
 }
 
+
 #searchArticles, #randomArticles {
     color: black;
-    border: 1px solid black;
+    border: 5px solid white;
+    background: darkgray;
+    border-radius: 5px;
     max-width: 90vw;
     display: block;
     margin: 5vh auto;
     padding: 1.5vw;
-    transition: all ease 0.3s;
+    transition: all ease 0.1s;
 }
 
 #searchArticles:hover, #randomArticles:hover {
-    background: lightgray;
-    border-radius: 5px;
+    background: darkorchid;
+    /* border: 5px solid white; */
+    border-radius: 8px;
     transform: scale(1.005);
 }
 
@@ -67,4 +80,5 @@ a {
 #footer {
     text-align: center;
     font-size: medium;
+    color: white;
 }
