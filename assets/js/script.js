@@ -2,13 +2,15 @@
     const searchForm = document.getElementById("search-form");
     const searchKeyword = document.getElementById("search-articles");
     const randomArticles = document.getElementById("random-articles");
+    const results = document.getElementById("results");
     const resultsContainer = document.getElementById("results-container");
     let searchText;
     searchKeyword.focus();
-    
+    results.classList.add("hidden");
+
     // Search articles event
     searchForm.addEventListener('submit', function (e) {
-        e.preventDefault();
+        e.preventDefault();        
         resultsContainer.innerHTML = '';
         searchText = searchKeyword.value;
 
@@ -16,6 +18,7 @@
         function requestError(e, part) {
             console.log(e);
             resultsContainer.insertAdjacentHTML('beforeend', `<p class="network-warning">Oh no! There was an error making a request for the ${part}.</p>`);
+            results.classList.remove("hidden");
         }
         
         // Render search articles
@@ -34,6 +37,7 @@
             }
 
             resultsContainer.insertAdjacentHTML('beforeend', content);
+            results.classList.remove("hidden");
         }
 
         // Fetch search articles
@@ -57,6 +61,7 @@
         function requestError(e, part) {
             console.log(e);
             resultsContainer.insertAdjacentHTML('beforeend', `<p class="network-warning">Oh no! There was an error making a request for the ${part}.</p>`);
+            results.classList.remove("hidden");
         }
         
         // Render random articles
@@ -85,6 +90,7 @@
             })();
 
             resultsContainer.insertAdjacentHTML('beforeend', content);
+            results.classList.remove("hidden");
         }
 
         // Fetch random articles
