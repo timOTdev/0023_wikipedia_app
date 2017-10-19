@@ -38,6 +38,8 @@ img {
 /* search */
 input, button  {
     margin-top: 3vh;
+    padding: 0.2vw;
+    border-radius: 2px;
     font-size: 1em;
     font-family: 'Playfair Display', serif;
 }
@@ -51,6 +53,7 @@ input:hover, button:hover {
 #results {
     color: white;
     display: inline-block;
+    list-style-type: none;
 }
 #results h1 {
     font-family: 'Cinzel', serif;
